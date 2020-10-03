@@ -1,4 +1,4 @@
-# TowerDefense
+# Tower Defense
 This is a simple Tower Defense game that will make you excited.
 
 **Do not re-upload this project**
