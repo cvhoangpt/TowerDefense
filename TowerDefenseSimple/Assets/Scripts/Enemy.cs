@@ -1,8 +1,16 @@
-﻿using UnityEngine;
+﻿using System.Security.Cryptography;
+using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
     public float speed = 10f;
+
+    public int health = 100;
+
+    public int value = 50;
+
+    public GameObject deathEffect;
+
 
     private Transform target;
     private int wayPointIndex = 0;
@@ -10,6 +18,23 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         target = Waypoints.points[0];
+    }
+
+    public void TakeDamage(int amount)
+    {
+        health -= amount;
+        if(health <= 0)
+        {
+            Die();
+        }
+    }
+    void Die()
+    {
+        PlayerStats.Money += value;
+        GameObject effect = (GameObject) Instantiate(deathEffect, transform.position, Quaternion.identity);
+        Destroy(effect, 5f);
+        
+        Destroy(gameObject);
     }
 
     void Update()
@@ -26,11 +51,18 @@ public class Enemy : MonoBehaviour
     {
         if (wayPointIndex >= Waypoints.points.Length - 1)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            EndPath();
             return;
         }
         wayPointIndex++;
         target = Waypoints.points[wayPointIndex];
+    }
+    
+    void EndPath()
+    {
+        PlayerStats.Lives--;
+        Destroy(gameObject);
     }
 
 }
