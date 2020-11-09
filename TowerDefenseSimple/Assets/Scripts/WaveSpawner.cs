@@ -24,8 +24,11 @@ public class WaveSpawner : MonoBehaviour
             countdown = timeEachWaves;
         }
         countdown -= Time.deltaTime;
+        countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);
 
-        waveCountdownText.text = Mathf.Round(countdown).ToString();
+        //Xu ly hieu ung ve thoi gian
+        //  waveCountdownText.text = Mathf.Round(countdown).ToString();
+        waveCountdownText.text = string.Format("{0:00.00}", countdown);
     }
 
     //This method to describe one wave game

@@ -2,6 +2,9 @@
 
 public class Shop : MonoBehaviour
 {
+    //Code added for currency 
+    public TurretBlueprint standardTurret;
+    public TurretBlueprint missleLauncher;
 
     BuildManager buildManager;
 
@@ -9,15 +12,17 @@ public class Shop : MonoBehaviour
     {
         buildManager = BuildManager.instance;
     }
-    public void PurchaseStandardTurret()
+
+    //routes to build manager for processing when select turret blue print
+    public void SelectStandardTurret()
     {
         Debug.Log("Standard Turret Selected");
-        buildManager.SetTurretToBuild(buildManager.standardTurretPrefab);
+        buildManager.SelectTurretToBuild(standardTurret);
     }
 
-    public void PurchaseMissileLauncher()
+    public void SelectMissileLauncher()
     {
         Debug.Log("Missile Launcher Selected");
-        buildManager.SetTurretToBuild(buildManager.missileLauncherPrefab);
+        buildManager.SelectTurretToBuild(missleLauncher);
     }
 }
