@@ -5,6 +5,7 @@ public class Shop : MonoBehaviour
     //Code added for currency 
     public TurretBlueprint standardTurret;
     public TurretBlueprint missleLauncher;
+    public TurretBlueprint laserBeamer;
 
     BuildManager buildManager;
 
@@ -24,5 +25,11 @@ public class Shop : MonoBehaviour
     {
         Debug.Log("Missile Launcher Selected");
         buildManager.SelectTurretToBuild(missleLauncher);
+    }
+
+    public void SelectLaserBeamer()
+    {
+        Debug.Log("Laser Beamer Selected");
+        buildManager.SelectTurretToBuild(laserBeamer);
     }
 }

@@ -107,3 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  health: 100
+  value: 50
+  deathEffect: {fileID: 6140164215000910798, guid: bdfae6059e7d265439aa966145344421,
+    type: 3}

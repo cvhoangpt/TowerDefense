@@ -1,6 +1,5 @@
 ﻿using UnityEngine.UI;
 using UnityEngine;
-using System.Globalization;
 
 public class LivesUI : MonoBehaviour
 {
