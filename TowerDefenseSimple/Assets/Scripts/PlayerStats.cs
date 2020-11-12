@@ -11,9 +11,12 @@ public class PlayerStats : MonoBehaviour
     //Keep tracks how many lives have left
     public int startLives = 20;
 
+    public static int Rounds;
     void Start()
     {
         Money = startMoney;
         Lives = startLives;
+
+        Rounds = 0;
     }
 }

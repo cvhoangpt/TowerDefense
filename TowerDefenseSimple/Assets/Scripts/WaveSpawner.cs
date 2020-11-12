@@ -13,7 +13,7 @@ public class WaveSpawner : MonoBehaviour
 
     public Text waveCountdownText;
 
-    private int waveIndex = 1;
+    private int waveIndex = 0;
 
     void Update()
     {
@@ -34,6 +34,9 @@ public class WaveSpawner : MonoBehaviour
     //This method to describe one wave game
     IEnumerator SpawnWave()
     {
+        waveIndex++;
+        PlayerStats.Rounds++;
+
         //Debug.Log("Wave Incoming...");
         for (int i = 0; i < waveIndex; i++)
         {
