@@ -1,11 +1,8 @@
 # =============== #
-# Unity folders #
+# Unity generated #
 # =============== #
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-3rdParty/
-Builds/
+Temp/
+Library/
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
@@ -14,19 +11,13 @@ ExportedObj/
 obj/
 *.svd
 *.userprefs
-*.csproj
+/*.csproj
 *.pidb
 *.suo
-*.sln
+/*.sln
 *.user
 *.unityproj
 *.booproj
-
-# ===================================== #
-# Unity generated #
-# ===================================== #
-*.pidb.meta
-sysinfo.txt
 
 # ============ #
 # OS generated #
