@@ -5,7 +5,9 @@ ScriptsOnlyBuild:
     - Bullet
     - CameraController
     - Enemy
-    - Gamemanage
+    - EnemyMovement
+    - GameManagement
+    - GameOver
     - LivesUI
     - MoneyUI
     - Node
@@ -29,6 +31,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.LayoutElement
+    - UnityEngine.UI.Shadow
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/MainScene.unity:
@@ -69,46 +72,54 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11236}
     - Class: 114
-      Script: {instanceID: 11396}
+      Script: {instanceID: 11252}
     - Class: 114
-      Script: {instanceID: 11436}
+      Script: {instanceID: 11398}
     - Class: 114
-      Script: {instanceID: 11550}
+      Script: {instanceID: 11438}
     - Class: 114
-      Script: {instanceID: 11606}
+      Script: {instanceID: 11552}
     - Class: 114
       Script: {instanceID: 11608}
     - Class: 114
-      Script: {instanceID: 11810}
+      Script: {instanceID: 11610}
     - Class: 114
-      Script: {instanceID: 11814}
+      Script: {instanceID: 11758}
     - Class: 114
-      Script: {instanceID: 11826}
+      Script: {instanceID: 11812}
     - Class: 114
-      Script: {instanceID: 11944}
+      Script: {instanceID: 11816}
     - Class: 114
-      Script: {instanceID: 12038}
+      Script: {instanceID: 11828}
+    - Class: 114
+      Script: {instanceID: 11946}
     - Class: 114
       Script: {instanceID: 12040}
     - Class: 114
-      Script: {instanceID: 12074}
+      Script: {instanceID: 12042}
     - Class: 114
-      Script: {instanceID: 12154}
+      Script: {instanceID: 12076}
     - Class: 114
-      Script: {instanceID: 12338}
+      Script: {instanceID: 12156}
     - Class: 114
-      Script: {instanceID: 12434}
+      Script: {instanceID: 12340}
     - Class: 114
-      Script: {instanceID: 12696}
+      Script: {instanceID: 12436}
     - Class: 114
-      Script: {instanceID: 12726}
+      Script: {instanceID: 12698}
     - Class: 114
-      Script: {instanceID: 12986}
+      Script: {instanceID: 12728}
     - Class: 114
-      Script: {instanceID: 13050}
+      Script: {instanceID: 12792}
     - Class: 114
-      Script: {instanceID: 13074}
+      Script: {instanceID: 12990}
+    - Class: 114
+      Script: {instanceID: 13054}
+    - Class: 114
+      Script: {instanceID: 13078}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 120
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
@@ -130,6 +141,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
   scriptHashData:
   - hash:
       serializedVersion: 2
@@ -143,6 +156,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: e7a3cda12954090dfba95ac2f618b1e8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameOver
   - hash:
       serializedVersion: 2
       Hash: c42672c997f8be6b1aa86a927ebea785
@@ -271,7 +290,7 @@ ScriptsOnlyBuild:
     className: WaveSpawner
   - hash:
       serializedVersion: 2
-      Hash: c3d5df1e1239e43f002ee321c6f2fb6f
+      Hash: 23b3488846a7ed8a4b6f9d1ef103b407
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Shop
@@ -313,7 +332,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: 35dbf17296bae6a6d7a921da90cde54d
+      Hash: ad0c9c679c2161d3e849c703f9891aee
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy
@@ -373,7 +392,7 @@ ScriptsOnlyBuild:
     className: Bullet
   - hash:
       serializedVersion: 2
-      Hash: 3c7b6191f6b23a2fb54d447963fbd91a
+      Hash: b82c1038d718d1a15d70c8b21213ee58
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Turret
@@ -511,6 +530,12 @@ ScriptsOnlyBuild:
     className: CameraController
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyMovement
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -547,10 +572,10 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: c98d5c8f7d5d06127c3d0a8cd7e6e90b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Gamemanage
+    className: GameManagement
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -607,7 +632,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 2310e9fe601fdfcccce3f2d450a5bef5
+      Hash: 5aa41fa8a20f52b971f89fc29de9e8c8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BuildManager
