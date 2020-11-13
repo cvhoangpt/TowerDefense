@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
     {
         PlayerStats.Money += worth;
         GameObject effect = (GameObject) Instantiate(deathEffect, transform.position, Quaternion.identity);
-        Destroy(effect, 5f);
+        Destroy(effect, 3f);
 
         //Debug.Log("Error hapen!!");
         
