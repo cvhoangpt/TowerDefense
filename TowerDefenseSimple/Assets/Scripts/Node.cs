@@ -9,7 +9,6 @@ public class Node : MonoBehaviour
     public Color notEnoughMoneyColor;
 
     [Header("Optional")]
-
     public GameObject turret;
 
     private Renderer rend;
