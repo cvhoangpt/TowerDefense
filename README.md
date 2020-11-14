@@ -1,11 +1,15 @@
 # Tower Defense
 This is a simple Tower Defense game that will make you excited.
 
-**Do not re-upload this project**
-
 *To clone this project, use* `git clone https://github.com/cvhoangpt/TowerDefense.git`
 
-This project use Unity version 2019.4.11f1
+About Tool:
+- Unity (ver 2019.4.11f1).
+- Visual Studio (Community 2019) with Unity Tool.
+
+About Assets and Materials: 
+- Turrets: [devassets.com](https://devassets.com/assets/tower-defense-assets/).
+- Fonts:
 
 Project created by Group 10 (class CG & VR)
 - Trần Minh Sơn *20168463*
