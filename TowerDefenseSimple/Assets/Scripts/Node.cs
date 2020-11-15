@@ -33,16 +33,19 @@ public class Node : MonoBehaviour
         {
             return;
         }
+
+        if (turret != null)
+        {
+            buildManager.SelectNode(this);
+            return;
+        }
+
         //Check CanBuild or not with events
         if (!buildManager.CanBuild)
         {
             return;
         }
-        if (turret != null)
-        {
-            Debug.Log("Can't build");
-            return;
-        }
+
         buildManager.BuildTurretOn(this);
 
     }
