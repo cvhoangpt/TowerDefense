@@ -19,26 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22e1cb18-2cc8-468e-b582-57b1608b05fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Materials/Bullet_Upgraded.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Materials/Bullet_Upgraded.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Prefabs/Bullet_Upgraded.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Prefabs/Bullet_Upgraded.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Prefabs/LaserBeamer_Upgraded.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Prefabs/LaserBeamer_Upgraded.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Prefabs/MissileLauncher_Upgraded.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Prefabs/MissileLauncher_Upgraded.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Prefabs/SellEffect.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Prefabs/SellEffect.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Prefabs/StandardTurret_Upgraded.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Prefabs/StandardTurret_Upgraded.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TowerDefenseSimple/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TowerDefenseSimple/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prefabs/StandardTurret.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prefabs/StandardTurret.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BuildManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BuildManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Node.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NodeUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NodeUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TurretBlueprint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TurretBlueprint.cs" afterDir="false" />
-    </list>
+    <list default="true" id="22e1cb18-2cc8-468e-b582-57b1608b05fd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,8 +33,11 @@
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Tai lieu/20201/TowerDefense/TowerDefenseSimple/Assets/Scripts/Node.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Tai lieu/20201/TowerDefense/TowerDefenseSimple/Assets/Scripts/NodeUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Tai lieu/20201/TowerDefense/TowerDefenseSimple/Assets/Scripts/BuildManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -113,7 +97,7 @@
       <updated>1605406864436</updated>
       <workItem from="1605406873202" duration="136000" />
       <workItem from="1605407141153" duration="3363000" />
-      <workItem from="1605449271430" duration="7279000" />
+      <workItem from="1605449271430" duration="7684000" />
     </task>
     <task id="LOCAL-00001" summary="Add Turret Selection UI">
       <created>1605412400446</created>
@@ -129,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605450207294</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Turret Selection UI: Upgrade and Selling Turret">
+      <created>1605458866283</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605458866284</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -151,7 +142,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Add Turret Selection UI" />
     <MESSAGE value="Turret Selection UI: Edit Scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="Turret Selection UI: Edit Scene" />
+    <MESSAGE value="Turret Selection UI: Upgrade and Selling Turret" />
+    <option name="LAST_COMMIT_MESSAGE" value="Turret Selection UI: Upgrade and Selling Turret" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1605450214214">
@@ -222,10 +214,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="245" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1605457912149" />
-    <state x="263" y="98" key="IDE.errors.dialog" timestamp="1605407157791">
+    <state x="263" y="98" key="IDE.errors.dialog" timestamp="1605459153778">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="263" y="98" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1605407157791" />
+    <state x="263" y="98" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1605459153778" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
