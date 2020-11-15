@@ -8,4 +8,12 @@ public class TurretBlueprint
 {
     public GameObject prefab;
     public int cost; //storing cost of turret
+
+    public GameObject upgradedPrefab;
+    public int upgradeCost;
+
+    public int GetSellAmount(bool isUpgraded)
+    {
+        return isUpgraded ? (cost + upgradeCost) / 2 : cost / 2;
+    }
 }
