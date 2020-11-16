@@ -10,6 +10,7 @@ About Tool:
 About Assets and Materials: 
 - Turrets: [devassets.com](https://devassets.com/assets/tower-defense-assets/).
 - Fonts:
+- Sound: [Tower Defense Simulator OST - Trailer](https://youtu.be/4fnCBAAeGMM).
 
 Project created by Group 10 (class CG & VR)
 - Trần Minh Sơn *20168463*

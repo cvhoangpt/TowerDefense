@@ -56,5 +56,6 @@ public class NodeUI : MonoBehaviour
     {
         target.SellTurret();
         BuildManager.instance.DeselectNode();
+        target.isUpgraded = false;
     }
 }
