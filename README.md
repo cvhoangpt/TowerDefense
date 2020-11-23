@@ -14,6 +14,6 @@ About Assets and Materials:
 
 Project created by Group 10 (class CG & VR)
 - Trần Minh Sơn *20168463*
-- Hoàng Sơn
+- Hoàng Sơn *20168783*
 - Cai Việt Hoàng *20168205*
 - Huỳnh Hưng *20168255*
