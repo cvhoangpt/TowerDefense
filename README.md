@@ -8,9 +8,9 @@ About Tool:
 - Visual Studio (Community 2019) with Unity Tool / Jetbrains Rider 2020.2.
 
 About Assets and Materials: 
-- Turrets: [devassets.com](https://devassets.com/assets/tower-defense-assets/).
+- Turrets: [Tower Defense Assets](https://devassets.com/assets/tower-defense-assets/).
 - Fonts: updating
-- Sound: [Tower Defense Simulator OST - Trailer](https://youtu.be/4fnCBAAeGMM).
+- Sound: [Defense Grid: The Awakening Soundtrack](https://www.youtube.com/playlist?list=PLhrK8zP7p2c724-PgbRoRXzAeq8gHdgtf).
 
 Project created by Group 10 (class CG & VR)
 - Trần Minh Sơn *20168463*
