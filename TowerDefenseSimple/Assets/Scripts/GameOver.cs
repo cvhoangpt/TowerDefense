@@ -6,6 +6,7 @@ public class GameOver : MonoBehaviour
 {
     public Text roundsText;
     public SceneFader sceneFader;
+    public string menuScene = "MainMenu";
 
     void OnEnable()
     {
@@ -19,6 +20,6 @@ public class GameOver : MonoBehaviour
 
     public void Menu()
     {
-        Debug.Log("Go to Menu.");
+        sceneFader.FadeTo(menuScene);
     }
 }
