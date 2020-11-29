@@ -20294,7 +20294,7 @@ GameObject:
   - component: {fileID: 1602880389}
   - component: {fileID: 1602880388}
   m_Layer: 0
-  m_Name: SoundManager
+  m_Name: PlayAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20307,7 +20307,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602880387}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8787b7f2afeeafc4bb65da74df533fb4, type: 3}
