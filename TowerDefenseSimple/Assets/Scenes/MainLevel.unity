@@ -4757,6 +4757,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui: {fileID: 1111541763}
   sceneFader: {fileID: 8230963126983122055}
+  menuScene: MainMenu
 --- !u!1001 &346041168
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10559,6 +10560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roundsText: {fileID: 1122726550}
   sceneFader: {fileID: 8230963126983122055}
+  menuScene: MainMenu
 --- !u!95 &871713462
 Animator:
   serializedVersion: 3
