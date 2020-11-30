@@ -9881,6 +9881,9 @@ MonoBehaviour:
   lineRenderer: {fileID: 2582595274006798206}
   impactEffect: {fileID: 183146891661155133}
   impactLight: {fileID: 6228563339263539912}
+  laserSound: {fileID: 8300000, guid: ab297b593498a6e47ba84de770477cbe, type: 3}
+  audioSource: {fileID: 0}
+  volume: 1
   enemyTag: Enemy
   partToRotate: {fileID: 1298061765183723904}
   turnSpeed: 10

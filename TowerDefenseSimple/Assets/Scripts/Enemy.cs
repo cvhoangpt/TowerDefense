@@ -4,6 +4,8 @@ public class Enemy : MonoBehaviour
 {
     public float startSpeed = 10f;
 
+    
+
     [HideInInspector]
     public float speed = 10f;
 
@@ -12,9 +14,12 @@ public class Enemy : MonoBehaviour
 
     public int worth = 50;
 
+    [Header("Death Effect")]
     public GameObject deathEffect;
+    public AudioClip deathSound;
 
-    [Header("Unity Stuff")] public Image healthBar;
+    [Header("Unity Stuff")] 
+    public Image healthBar;
     
     void Start()
     {
@@ -46,7 +51,7 @@ public class Enemy : MonoBehaviour
         Destroy(effect, 3f);
 
         //Debug.Log("Error hapen!!");
-        
+        AudioSource.PlayClipAtPoint(deathSound, transform.position);
         Destroy(gameObject);
     }
 

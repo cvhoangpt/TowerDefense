@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour
 
     public int damage = 50;
     public GameObject impactEffect;
+    public AudioClip hitSound;
     public void Seek(Transform _target)
     {
         target = _target;
@@ -48,7 +49,8 @@ public class Bullet : MonoBehaviour
         {
             Damage(target);
         }
-        //Destroy(target.gameObject); got error
+        
+        AudioSource.PlayClipAtPoint(hitSound, transform.position);
         Destroy(gameObject);
     }
 
