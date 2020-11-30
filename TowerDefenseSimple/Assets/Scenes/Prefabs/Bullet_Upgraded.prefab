@@ -97,3 +97,4 @@ MonoBehaviour:
   damage: 70
   impactEffect: {fileID: 2960528046802975668, guid: 3edfbb8ab2521ed4ba9113a2d0555c43,
     type: 3}
+  hitSound: {fileID: 8300000, guid: 8401456349c492a489ed90469e317e43, type: 3}

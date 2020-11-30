@@ -128,7 +128,7 @@ public class Turret : MonoBehaviour
         impactEffect.transform.position = target.position + dir.normalized;
 
         impactEffect.transform.rotation = Quaternion.LookRotation(dir);
-
+        
     }
 
     void Shoot()
