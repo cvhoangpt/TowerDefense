@@ -9872,7 +9872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 103448f696e230746a6c724de84f8237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 20
+  range: 15
   bulletPrefab: {fileID: 0}
   fireRate: 1
   useLaser: 1
@@ -9881,8 +9881,7 @@ MonoBehaviour:
   lineRenderer: {fileID: 2582595274006798206}
   impactEffect: {fileID: 183146891661155133}
   impactLight: {fileID: 6228563339263539912}
-  laserSound: {fileID: 8300000, guid: ab297b593498a6e47ba84de770477cbe, type: 3}
-  audioSource: {fileID: 0}
+  laserSound: {fileID: 8300000, guid: 880a9d52a96fdef4abf2179714a250ec, type: 3}
   volume: 1
   enemyTag: Enemy
   partToRotate: {fileID: 1298061765183723904}

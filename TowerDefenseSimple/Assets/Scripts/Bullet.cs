@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour
     public int damage = 50;
     public GameObject impactEffect;
     public AudioClip hitSound;
+    public float volume = 10f;
     public void Seek(Transform _target)
     {
         target = _target;
@@ -45,19 +46,20 @@ public class Bullet : MonoBehaviour
         if (explosionRadius > 0f)
         {
             Explode();
-        } else
+        }
+        else
         {
             Damage(target);
         }
-        
-        AudioSource.PlayClipAtPoint(hitSound, transform.position);
+
+        AudioSource.PlayClipAtPoint(hitSound, 0.7f * Camera.main.transform.position + 0.3f * transform.position, volume);
         Destroy(gameObject);
     }
 
     void Explode()
     {
-       Collider[] colloders =  Physics.OverlapSphere(transform.position, explosionRadius);
-        foreach(Collider collider in colloders)
+        Collider[] colloders = Physics.OverlapSphere(transform.position, explosionRadius);
+        foreach (Collider collider in colloders)
         {
             if (collider.tag == "Enemy")
             {
@@ -72,7 +74,7 @@ public class Bullet : MonoBehaviour
         {
             e.TakeDamage(damage);
         }
-        
+
     }
 
     void OnDrawGizmosSelected()

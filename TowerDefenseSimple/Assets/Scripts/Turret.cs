@@ -24,6 +24,9 @@ public class Turret : MonoBehaviour
     public LineRenderer lineRenderer;
     public ParticleSystem impactEffect;
     public Light impactLight;
+    private AudioSource audioSource;
+    public AudioClip laserSound;
+    public float volume = 1f;
 
     [Header("Unity Setup Fields")]
 
@@ -36,6 +39,7 @@ public class Turret : MonoBehaviour
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
 
@@ -46,10 +50,10 @@ public class Turret : MonoBehaviour
         float shortestDistance = Mathf.Infinity;
         GameObject nearestEnemy = null;
 
-        foreach(GameObject enemy in enemies)
+        foreach (GameObject enemy in enemies)
         {
             float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
-            if(distanceToEnemy < shortestDistance)
+            if (distanceToEnemy < shortestDistance)
             {
                 shortestDistance = distanceToEnemy;
                 nearestEnemy = enemy;
@@ -60,7 +64,8 @@ public class Turret : MonoBehaviour
         {
             target = nearestEnemy.transform;
             targetEnemy = nearestEnemy.GetComponent<Enemy>();
-        } else
+        }
+        else
         {
             target = null;
         }
@@ -77,6 +82,7 @@ public class Turret : MonoBehaviour
                     impactEffect.Stop();
                     impactLight.enabled = false;
                 }
+                
             }
 
             return;
@@ -88,7 +94,8 @@ public class Turret : MonoBehaviour
         if (useLaser)
         {
             Laser();
-        } else
+        }
+        else
         {
             if (fireCountdown <= 0f)
             {
@@ -98,7 +105,6 @@ public class Turret : MonoBehaviour
 
             fireCountdown -= Time.deltaTime;
         }
-        
     }
 
     void LockOnTarget()
@@ -119,6 +125,7 @@ public class Turret : MonoBehaviour
             lineRenderer.enabled = true;
             impactEffect.Play();
             impactLight.enabled = true;
+
         }
         lineRenderer.SetPosition(0, firePoint.position);
         lineRenderer.SetPosition(1, target.position);
@@ -128,7 +135,11 @@ public class Turret : MonoBehaviour
         impactEffect.transform.position = target.position + dir.normalized;
 
         impactEffect.transform.rotation = Quaternion.LookRotation(dir);
-        
+
+        // audioSource.clip = laserSound;
+        //AudioSource.PlayClipAtPoint(laserSound, 0.7f * Camera.main.transform.position + 0.3f * transform.position, volume);
+        //Destroy(laserSound);
+
     }
 
     void Shoot()
@@ -146,6 +157,6 @@ public class Turret : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, range);    
+        Gizmos.DrawWireSphere(transform.position, range);
     }
 }
