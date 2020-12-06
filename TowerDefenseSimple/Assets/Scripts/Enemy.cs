@@ -16,9 +16,9 @@ public class Enemy : MonoBehaviour
     public GameObject deathEffect;
     public AudioClip deathSound;
 
-    [Header("Unity Stuff")] 
+    [Header("Unity Stuff")]
     public Image healthBar;
-    
+
     void Start()
     {
         speed = startSpeed;
@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour
         health -= amount;
 
         healthBar.fillAmount = health / startHealth;
-        
+
         if (health <= 0)
         {
             Die();
@@ -40,14 +40,15 @@ public class Enemy : MonoBehaviour
     public void Slow(float pct)
     {
         speed = startSpeed * (1f - pct);
-    }    
+    }
 
     void Die()
     {
         PlayerStats.Money += worth;
-        GameObject effect = (GameObject) Instantiate(deathEffect, transform.position, Quaternion.identity);
+        GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(effect, 3f);
 
+        WaveSpawner.EnemiesAlive--;
         //Debug.Log("Error hapen!!");
         AudioSource.PlayClipAtPoint(deathSound, transform.position);
         Destroy(gameObject);

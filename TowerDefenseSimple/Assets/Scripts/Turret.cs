@@ -137,14 +137,14 @@ public class Turret : MonoBehaviour
         impactEffect.transform.rotation = Quaternion.LookRotation(dir);
 
         // audioSource.clip = laserSound;
-        //AudioSource.PlayClipAtPoint(laserSound, 0.7f * Camera.main.transform.position + 0.3f * transform.position, volume);
+        AudioSource.PlayClipAtPoint(laserSound, 0.8f * Camera.main.transform.position + 0.2f * transform.position, volume);
         //Destroy(laserSound);
 
     }
 
     void Shoot()
     {
-        Debug.Log("Shoot-->"); // test turret touch enemy
+        // Debug.Log("Shoot-->"); // test turret touch enemy
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
