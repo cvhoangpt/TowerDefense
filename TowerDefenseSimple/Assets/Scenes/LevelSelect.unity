@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &167479939 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2587665446479775461, guid: dc770223d9ff83949abe2921c9d6d88a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2082203796}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &208270429
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,6 +326,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelButton
       objectReference: {fileID: 0}
+    - target: {fileID: 2587665446479775460, guid: dc770223d9ff83949abe2921c9d6d88a,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2587665446479775461, guid: dc770223d9ff83949abe2921c9d6d88a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -348,6 +365,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Level01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587665446479775461, guid: dc770223d9ff83949abe2921c9d6d88a,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc770223d9ff83949abe2921c9d6d88a, type: 3}
@@ -501,6 +523,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 383044400}
   m_CullTransparentMesh: 0
+--- !u!114 &497815293 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2587665446479775461, guid: dc770223d9ff83949abe2921c9d6d88a,
+    type: 3}
+  m_PrefabInstance: {fileID: 263145523}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &577851660
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,6 +883,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Level03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587665446479775461, guid: dc770223d9ff83949abe2921c9d6d88a,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc770223d9ff83949abe2921c9d6d88a, type: 3}
@@ -1264,6 +1303,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 784347447}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1146543871 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2587665446479775461, guid: dc770223d9ff83949abe2921c9d6d88a,
+    type: 3}
+  m_PrefabInstance: {fileID: 784347447}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1303732203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,6 +1345,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fader: {fileID: 8230963127463918450}
+  levelButtons:
+  - {fileID: 497815293}
+  - {fileID: 167479939}
+  - {fileID: 1146543871}
 --- !u!4 &1303732205
 Transform:
   m_ObjectHideFlags: 0
@@ -1542,7 +1597,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.050980393}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1579,7 +1634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.043137256}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1759,6 +1814,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Level02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587665446479775461, guid: dc770223d9ff83949abe2921c9d6d88a,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc770223d9ff83949abe2921c9d6d88a, type: 3}
