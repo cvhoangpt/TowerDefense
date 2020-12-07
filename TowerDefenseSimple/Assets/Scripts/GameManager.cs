@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class GameManagement : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     public static bool GameIsOver;
 
     public GameObject gameOverUI;
+    public GameObject completeLevelUI;
 
     void Start()
     {
@@ -32,5 +33,12 @@ public class GameManagement : MonoBehaviour
     {
         GameIsOver = true;
         gameOverUI.SetActive(true);
+    }
+
+    public void WinLevel()
+    {
+        // Debug.Log("Level Won!");
+        GameIsOver = true;
+        completeLevelUI.SetActive(true);
     }
 }
