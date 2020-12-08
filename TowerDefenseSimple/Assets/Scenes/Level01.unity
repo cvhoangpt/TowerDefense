@@ -4985,7 +4985,7 @@ MonoBehaviour:
     count: 10
     rate: 1
   spawnPoint: {fileID: 900299134}
-  timeBetweenWaves: 5
+  timeBetweenWaves: 3
   waveCountdownText: {fileID: 991367652}
   gameManager: {fileID: 345684551}
 --- !u!4 &345684548
@@ -14294,7 +14294,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CONTINUE
+  m_Text: NEXT LEVEL
 --- !u!222 &1148063415
 CanvasRenderer:
   m_ObjectHideFlags: 0
