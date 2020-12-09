@@ -226,7 +226,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: b7fd7eab8debdaf4ba7fc5b058106d8f, type: 3}
+    m_Font: {fileID: 12800000, guid: c4965618c20398e4583414b6e081aa46, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -4984,6 +4984,21 @@ MonoBehaviour:
   - enemy: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8, type: 3}
     count: 10
     rate: 1
+  - enemy: {fileID: 5917294062029212058, guid: 9cb337ae6f4f1bf49a283f4b4b11915e, type: 3}
+    count: 20
+    rate: 1
+  - enemy: {fileID: 5917294062029212058, guid: 9cb337ae6f4f1bf49a283f4b4b11915e, type: 3}
+    count: 40
+    rate: 1.5
+  - enemy: {fileID: 5917294062029212058, guid: 2409c8c1d6e6b2e4a94ab8efff3fd9c0, type: 3}
+    count: 2
+    rate: 1
+  - enemy: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8, type: 3}
+    count: 30
+    rate: 1
+  - enemy: {fileID: 5917294062029212058, guid: 2409c8c1d6e6b2e4a94ab8efff3fd9c0, type: 3}
+    count: 5
+    rate: 1
   spawnPoint: {fileID: 900299134}
   timeBetweenWaves: 3
   waveCountdownText: {fileID: 991367652}
@@ -5031,7 +5046,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f40c7cd5b4d59f5498c233dbad48f056, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 400
+  startMoney: 500
   startLives: 20
 --- !u!114 &345684551
 MonoBehaviour:
@@ -12474,7 +12489,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c4965618c20398e4583414b6e081aa46, type: 3}
+    m_Font: {fileID: 12800000, guid: b7fd7eab8debdaf4ba7fc5b058106d8f, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -13046,13 +13061,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022866984}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.1764706}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -17989,7 +18004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1444962845
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18046,8 +18061,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuSceneName: MainMenu
-  nextLevel: Level02
-  levelToUnlock: 2
+  nextLevel: Level03
+  levelToUnlock: 3
   sceneFader: {fileID: 8230963126983122055}
 --- !u!1001 &1445033985
 PrefabInstance:
@@ -20455,7 +20470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 72.64}
+  m_AnchoredPosition: {x: 0, y: 72.75}
   m_SizeDelta: {x: 0, y: 64.90503}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1564960359
@@ -23294,7 +23309,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level 1
+  m_Text: Level 2
 --- !u!222 &1793296340
 CanvasRenderer:
   m_ObjectHideFlags: 0
