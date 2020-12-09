@@ -33,6 +33,9 @@ public class GameManager : MonoBehaviour
     {
         GameIsOver = true;
         gameOverUI.SetActive(true);
+        //yield return new WaitForSeconds(2);
+        StartCoroutine(Wait());
+        
     }
 
     public void WinLevel()
@@ -40,5 +43,11 @@ public class GameManager : MonoBehaviour
         // Debug.Log("Level Won!");
         GameIsOver = true;
         completeLevelUI.SetActive(true);
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(2);
+        Time.timeScale = 0f;
     }
 }
