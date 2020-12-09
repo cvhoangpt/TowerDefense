@@ -10,14 +10,6 @@ public class CompleteLevel : MonoBehaviour
     public int levelToUnlock = 2;
     public SceneFader sceneFader;
 
-    public void Continue()
-    {
-        if (PlayerPrefs.GetInt("levelReached", 1) < levelToUnlock)
-        {
-            PlayerPrefs.SetInt("levelReached", levelToUnlock);
-        }
-        sceneFader.FadeTo(nextLevel);
-    }
     public void Menu()
     {
         if (PlayerPrefs.GetInt("levelReached") < levelToUnlock)
