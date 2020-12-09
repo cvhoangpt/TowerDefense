@@ -137,7 +137,7 @@ public class Turret : MonoBehaviour
         impactEffect.transform.rotation = Quaternion.LookRotation(dir);
 
         // audioSource.clip = laserSound;
-        AudioSource.PlayClipAtPoint(laserSound, 0.8f * Camera.main.transform.position + 0.2f * transform.position, volume);
+        AudioSource.PlayClipAtPoint(laserSound, transform.position, volume);
         //Destroy(laserSound);
 
     }
