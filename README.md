@@ -9,8 +9,7 @@ About Tool:
 
 About Assets and Materials: 
 - Turrets: [Tower Defense Assets](https://devassets.com/assets/tower-defense-assets/).
-- Fonts: updating
-- Sound: [Defense Grid: The Awakening Soundtrack](https://www.youtube.com/playlist?list=PLhrK8zP7p2c724-PgbRoRXzAeq8gHdgtf).
+- Sound: Some Nocopyright sound.
 
 Project created by Group 10 (class CG & VR)
 - Trần Minh Sơn *20168463*
