@@ -344,7 +344,7 @@ MonoBehaviour:
   startSpeed: 20
   speed: 10
   startHealth: 100
-  worth: 20
+  worth: 15
   deathEffect: {fileID: 6140164215000910798, guid: 56c0b2959667c544a91456fe28897453,
     type: 3}
   deathSound: {fileID: 8300000, guid: c401d00c96b512e488d2e3bf5d111509, type: 3}
