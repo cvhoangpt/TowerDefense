@@ -23,6 +23,7 @@ public class WaveSpawner : MonoBehaviour
     }
     void Update()
     {
+        // When Enemy 1 round finish, countdown start
         if (EnemiesAlive > 0)
         {
             return;
@@ -56,14 +57,40 @@ public class WaveSpawner : MonoBehaviour
 
         Wave wave = waves[waveIndex];
 
-        EnemiesAlive = wave.count;
+        EnemiesAlive = wave.count1;
 
         //Debug.Log("Wave Incoming...");
-        for (int i = 0; i < wave.count; i++)
+        for (int i = 0; i < wave.count1; i++)
         {
-            SpawnEnemy(wave.enemy);
-            yield return new WaitForSeconds(1f / wave.rate);
+            SpawnEnemy(wave.enemy1);
+            // yield return new WaitForSeconds(1f / wave.rate01);
+            yield return new WaitForSeconds(1f / wave.rate1);
+            if (i == wave.count1 - 1)
+            {
+                yield return new WaitForSeconds(5);
+            }
         }
+
+        EnemiesAlive += wave.count2;
+        for (int i = 0; i < wave.count2; i++)
+        {
+            SpawnEnemy(wave.enemy2);
+            // yield return new WaitForSeconds(1f / wave.rate01);
+            yield return new WaitForSeconds(1f / wave.rate2);
+            if (i == wave.count2 - 1)
+            {
+                yield return new WaitForSeconds(5);
+            }
+        }
+
+        EnemiesAlive += wave.count3;
+        for (int i = 0; i < wave.count3; i++)
+        {
+            SpawnEnemy(wave.enemy3);
+            // yield return new WaitForSeconds(1f / wave.rate01);
+            yield return new WaitForSeconds(1f / wave.rate3);
+        }
+
         waveIndex++;
     }
     void SpawnEnemy(GameObject enemy)

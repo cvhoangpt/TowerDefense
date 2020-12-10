@@ -4975,30 +4975,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - enemy: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8, type: 3}
-    count: 5
-    rate: 0.5
-  - enemy: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8, type: 3}
-    count: 8
-    rate: 1
-  - enemy: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8, type: 3}
-    count: 10
-    rate: 1
-  - enemy: {fileID: 5917294062029212058, guid: 9cb337ae6f4f1bf49a283f4b4b11915e, type: 3}
-    count: 20
-    rate: 1
-  - enemy: {fileID: 5917294062029212058, guid: 9cb337ae6f4f1bf49a283f4b4b11915e, type: 3}
-    count: 40
-    rate: 1.5
-  - enemy: {fileID: 5917294062029212058, guid: 2409c8c1d6e6b2e4a94ab8efff3fd9c0, type: 3}
-    count: 2
-    rate: 1
-  - enemy: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8, type: 3}
-    count: 30
-    rate: 1
-  - enemy: {fileID: 5917294062029212058, guid: 2409c8c1d6e6b2e4a94ab8efff3fd9c0, type: 3}
-    count: 5
-    rate: 1
+  - enemy01: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8,
+      type: 3}
+    count01: 5
+    rate01: 2
+    enemy02: {fileID: 5917294062029212058, guid: 9cb337ae6f4f1bf49a283f4b4b11915e,
+      type: 3}
+    count02: 10
+    rate02: 4
+    enemy03: {fileID: 5917294062029212058, guid: 2409c8c1d6e6b2e4a94ab8efff3fd9c0,
+      type: 3}
+    count03: 2
+    rate03: 1
+  - enemy01: {fileID: 5917294062029212058, guid: e3303783f7385184bb89b78803482a25,
+      type: 3}
+    count01: 1
+    rate01: 1
+    enemy02: {fileID: 5917294062029212058, guid: 9cb337ae6f4f1bf49a283f4b4b11915e,
+      type: 3}
+    count02: 15
+    rate02: 1
+    enemy03: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8,
+      type: 3}
+    count03: 10
+    rate03: 1
   spawnPoint: {fileID: 900299134}
   timeBetweenWaves: 3
   waveCountdownText: {fileID: 991367652}
