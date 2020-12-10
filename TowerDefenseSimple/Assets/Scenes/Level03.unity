@@ -1939,7 +1939,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110516234}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -2014,7 +2014,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114392990}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -4975,141 +4975,100 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
+  - enemy1: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8,
+      type: 3}
+    count1: 4
+    rate1: 3
     enemy2: {fileID: 0}
     count2: 0
     rate2: 0
     enemy3: {fileID: 0}
     count3: 0
     rate3: 0
-  - enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
-    enemy2: {fileID: 0}
-    count2: 0
-    rate2: 0
-    enemy3: {fileID: 0}
-    count3: 0
-    rate3: 0
-  - enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
-    enemy2: {fileID: 0}
-    count2: 0
-    rate2: 0
-    enemy3: {fileID: 0}
-    count3: 0
-    rate3: 0
-  - enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
-    enemy2: {fileID: 0}
-    count2: 0
-    rate2: 0
-    enemy3: {fileID: 0}
-    count3: 0
-    rate3: 0
-  - enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
-    enemy2: {fileID: 0}
-    count2: 0
-    rate2: 0
-    enemy3: {fileID: 0}
-    count3: 0
-    rate3: 0
-  - enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
-    enemy2: {fileID: 0}
-    count2: 0
-    rate2: 0
-    enemy3: {fileID: 0}
-    count3: 0
-    rate3: 0
-  - enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
-    enemy2: {fileID: 0}
-    count2: 0
-    rate2: 0
-    enemy3: {fileID: 0}
-    count3: 0
-    rate3: 0
-  - enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
-    enemy2: {fileID: 0}
-    count2: 0
-    rate2: 0
-    enemy3: {fileID: 0}
-    count3: 0
-    rate3: 0
-  - enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
-    enemy2: {fileID: 0}
-    count2: 0
-    rate2: 0
-    enemy3: {fileID: 0}
-    count3: 0
-    rate3: 0
-  - enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
-    enemy2: {fileID: 0}
-    count2: 0
-    rate2: 0
-    enemy3: {fileID: 0}
-    count3: 0
-    rate3: 0
-  - enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
-    enemy2: {fileID: 0}
-    count2: 0
-    rate2: 0
-    enemy3: {fileID: 0}
-    count3: 0
-    rate3: 0
-  - enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
-    enemy2: {fileID: 0}
-    count2: 0
-    rate2: 0
-    enemy3: {fileID: 0}
-    count3: 0
-    rate3: 0
-  - enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
-    enemy2: {fileID: 0}
-    count2: 0
-    rate2: 0
-    enemy3: {fileID: 0}
-    count3: 0
-    rate3: 0
-  - enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
-    enemy2: {fileID: 0}
-    count2: 0
-    rate2: 0
-    enemy3: {fileID: 0}
-    count3: 0
-    rate3: 0
-  - enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
-    enemy2: {fileID: 0}
-    count2: 0
-    rate2: 0
-    enemy3: {fileID: 0}
-    count3: 0
-    rate3: 0
+  - enemy1: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8,
+      type: 3}
+    count1: 5
+    rate1: 2
+    enemy2: {fileID: 5917294062029212058, guid: 9cb337ae6f4f1bf49a283f4b4b11915e,
+      type: 3}
+    count2: 10
+    rate2: 2
+    enemy3: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8,
+      type: 3}
+    count3: 8
+    rate3: 2
+  - enemy1: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8,
+      type: 3}
+    count1: 15
+    rate1: 1
+    enemy2: {fileID: 5917294062029212058, guid: 9cb337ae6f4f1bf49a283f4b4b11915e,
+      type: 3}
+    count2: 20
+    rate2: 2
+    enemy3: {fileID: 5917294062029212058, guid: 2409c8c1d6e6b2e4a94ab8efff3fd9c0,
+      type: 3}
+    count3: 1
+    rate3: 1
+  - enemy1: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8,
+      type: 3}
+    count1: 15
+    rate1: 2
+    enemy2: {fileID: 5917294062029212058, guid: 9cb337ae6f4f1bf49a283f4b4b11915e,
+      type: 3}
+    count2: 20
+    rate2: 2
+    enemy3: {fileID: 5917294062029212058, guid: 9cb337ae6f4f1bf49a283f4b4b11915e,
+      type: 3}
+    count3: 25
+    rate3: 2
+  - enemy1: {fileID: 5917294062029212058, guid: 2409c8c1d6e6b2e4a94ab8efff3fd9c0,
+      type: 3}
+    count1: 3
+    rate1: 1
+    enemy2: {fileID: 5917294062029212058, guid: 9cb337ae6f4f1bf49a283f4b4b11915e,
+      type: 3}
+    count2: 25
+    rate2: 4
+    enemy3: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8,
+      type: 3}
+    count3: 20
+    rate3: 3
+  - enemy1: {fileID: 5917294062029212058, guid: e3303783f7385184bb89b78803482a25,
+      type: 3}
+    count1: 1
+    rate1: 1
+    enemy2: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8,
+      type: 3}
+    count2: 20
+    rate2: 4
+    enemy3: {fileID: 5917294062029212058, guid: 9cb337ae6f4f1bf49a283f4b4b11915e,
+      type: 3}
+    count3: 30
+    rate3: 3
+  - enemy1: {fileID: 5917294062029212058, guid: 2409c8c1d6e6b2e4a94ab8efff3fd9c0,
+      type: 3}
+    count1: 5
+    rate1: 1
+    enemy2: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8,
+      type: 3}
+    count2: 20
+    rate2: 3
+    enemy3: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8,
+      type: 3}
+    count3: 25
+    rate3: 4
+  - enemy1: {fileID: 5917294062029212058, guid: e3303783f7385184bb89b78803482a25,
+      type: 3}
+    count1: 3
+    rate1: 1
+    enemy2: {fileID: 5917294062029212058, guid: 2409c8c1d6e6b2e4a94ab8efff3fd9c0,
+      type: 3}
+    count2: 6
+    rate2: 1
+    enemy3: {fileID: 5917294062029212058, guid: 9cb337ae6f4f1bf49a283f4b4b11915e,
+      type: 3}
+    count3: 30
+    rate3: 3
   spawnPoint: {fileID: 900299134}
   timeBetweenWaves: 8
   waveCountdownText: {fileID: 991367652}
@@ -5157,7 +5116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f40c7cd5b4d59f5498c233dbad48f056, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 600
+  startMoney: 500
   startLives: 20
 --- !u!114 &345684551
 MonoBehaviour:
@@ -13829,7 +13788,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119505761}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 

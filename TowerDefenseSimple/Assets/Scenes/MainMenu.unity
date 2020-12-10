@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 20913005}
   - component: {fileID: 20913004}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CreditsCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -559,7 +559,7 @@ GameObject:
   - component: {fileID: 904686426}
   - component: {fileID: 904686425}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Introduction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -581,8 +581,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 192.3, y: -103.3}
-  m_SizeDelta: {x: 77.78717, y: 33.50836}
+  m_AnchoredPosition: {x: 273.5, y: -144}
+  m_SizeDelta: {x: 108.53665, y: 84.04913}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &904686425
 MonoBehaviour:
@@ -605,10 +605,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: bd6dbe08a1eca8c43aa0c4bf0c3a0114, type: 3}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
