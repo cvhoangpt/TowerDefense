@@ -5014,11 +5014,11 @@ MonoBehaviour:
     rate1: 2
     enemy2: {fileID: 5917294062029212058, guid: 9cb337ae6f4f1bf49a283f4b4b11915e,
       type: 3}
-    count2: 30
-    rate2: 2
+    count2: 40
+    rate2: 3
     enemy3: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8,
       type: 3}
-    count3: 20
+    count3: 25
     rate3: 3
   - enemy1: {fileID: 5917294062029212058, guid: 2409c8c1d6e6b2e4a94ab8efff3fd9c0,
       type: 3}
@@ -5026,7 +5026,7 @@ MonoBehaviour:
     rate1: 1
     enemy2: {fileID: 5917294062029212058, guid: 9cb337ae6f4f1bf49a283f4b4b11915e,
       type: 3}
-    count2: 25
+    count2: 30
     rate2: 2
     enemy3: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8,
       type: 3}
@@ -5079,7 +5079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f40c7cd5b4d59f5498c233dbad48f056, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 500
+  startMoney: 400
   startLives: 20
 --- !u!114 &345684551
 MonoBehaviour:
