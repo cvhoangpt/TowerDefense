@@ -12359,7 +12359,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $150
+  m_Text: $300
 --- !u!222 &974838317
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20590,10 +20590,10 @@ MonoBehaviour:
   missleLauncher:
     prefab: {fileID: 1667702594902915249, guid: 170987588b7b58d4f95fe13600dd7a8b,
       type: 3}
-    cost: 150
+    cost: 300
     upgradedPrefab: {fileID: 1667702594902915249, guid: 951186fd2bcf4ca46beb3faef81ca85c,
       type: 3}
-    upgradeCost: 120
+    upgradeCost: 200
   laserBeamer:
     prefab: {fileID: 8863855659991477109, guid: dd3c7331488c2c74d865f44935c3b76b,
       type: 3}
