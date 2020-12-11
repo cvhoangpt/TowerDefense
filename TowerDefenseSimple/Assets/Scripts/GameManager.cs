@@ -35,7 +35,6 @@ public class GameManager : MonoBehaviour
         gameOverUI.SetActive(true);
         //yield return new WaitForSeconds(2);
         StartCoroutine(Wait());
-        
     }
 
     public void WinLevel()
@@ -47,7 +46,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         Time.timeScale = 0f;
     }
 }
