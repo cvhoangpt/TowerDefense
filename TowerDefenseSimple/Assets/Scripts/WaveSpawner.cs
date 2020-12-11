@@ -67,7 +67,7 @@ public class WaveSpawner : MonoBehaviour
             yield return new WaitForSeconds(1f / wave.rate1);
             if (i == wave.count1 - 1)
             {
-                yield return new WaitForSeconds(5);
+                yield return new WaitForSeconds(4);
             }
         }
 
@@ -79,7 +79,7 @@ public class WaveSpawner : MonoBehaviour
             yield return new WaitForSeconds(1f / wave.rate2);
             if (i == wave.count2 - 1)
             {
-                yield return new WaitForSeconds(5);
+                yield return new WaitForSeconds(4);
             }
         }
 
