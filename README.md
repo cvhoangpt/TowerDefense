@@ -9,7 +9,8 @@ About Tool:
 
 About Assets and Materials: 
 - Turrets: [Tower Defense Assets](https://devassets.com/assets/tower-defense-assets/).
-- Sound: Some Nocopyright sound.
+- Terrain and props: Free assets in [Unity Asset Store](https://assetstore.unity.com/).
+- Sound: Some Nocopyright sound in [Youtube](youtube.com) and [Unity Asset Store](https://assetstore.unity.com/).
 
 Project created by Group 10 (class CG & VR)
 - Trần Minh Sơn *20168463*
