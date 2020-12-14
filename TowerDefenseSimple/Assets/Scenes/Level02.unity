@@ -19442,7 +19442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuSceneName: MainMenu
   sceneFader: {fileID: 8230963126983122055}
-  ui: {fileID: 0}
+  ui: {fileID: 871713459}
 --- !u!95 &871713462
 Animator:
   serializedVersion: 3
