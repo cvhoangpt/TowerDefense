@@ -8211,11 +8211,11 @@ MonoBehaviour:
   - enemy1: {fileID: 5917294062029212058, guid: 2409c8c1d6e6b2e4a94ab8efff3fd9c0,
       type: 3}
     count1: 5
-    rate1: 0.5
+    rate1: 0.1
     enemy2: {fileID: 5917294062029212058, guid: 9cb337ae6f4f1bf49a283f4b4b11915e,
       type: 3}
     count2: 50
-    rate2: 2
+    rate2: 0.5
     enemy3: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8,
       type: 3}
     count3: 30
@@ -23136,7 +23136,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -94.9, y: -56}
+  m_AnchoredPosition: {x: -95, y: -56}
   m_SizeDelta: {x: 75, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &991367652
