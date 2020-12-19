@@ -8211,15 +8211,15 @@ MonoBehaviour:
   - enemy1: {fileID: 5917294062029212058, guid: 2409c8c1d6e6b2e4a94ab8efff3fd9c0,
       type: 3}
     count1: 5
-    rate1: 0.1
+    rate1: 0.5
     enemy2: {fileID: 5917294062029212058, guid: 9cb337ae6f4f1bf49a283f4b4b11915e,
       type: 3}
     count2: 50
-    rate2: 0.5
+    rate2: 3
     enemy3: {fileID: 5917294062029212058, guid: fe5b6b6da287874489a8c8ec2f8101f8,
       type: 3}
     count3: 30
-    rate3: 1
+    rate3: 2
   spawnPoint: {fileID: 1824469086}
   timeBetweenWaves: 8
   waveCountdownText: {fileID: 991367652}

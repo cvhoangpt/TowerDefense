@@ -128,13 +128,15 @@ MonoBehaviour:
   range: 20
   bulletPrefab: {fileID: 8238136624530767712, guid: 1a42bd645b7e914478f048522b83153b,
     type: 3}
-  fireRate: 1.5
+  fireRate: 2
   useLaser: 0
   damageOverTime: 30
   slowAmount: 0.5
   lineRenderer: {fileID: 0}
   impactEffect: {fileID: 0}
   impactLight: {fileID: 0}
+  laserSound: {fileID: 0}
+  volume: 1
   enemyTag: Enemy
   partToRotate: {fileID: 5622018219920238074}
   turnSpeed: 10
