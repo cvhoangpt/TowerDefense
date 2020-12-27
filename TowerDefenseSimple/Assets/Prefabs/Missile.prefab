@@ -123,9 +123,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c270cee6ffc0b5346a42a8f88358b3fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 35
   explosionRadius: 8
-  damage: 55
+  damage: 50
   impactEffect: {fileID: 2081322244433034415, guid: e5da3d84e72b78047b4287b5700708a0,
     type: 3}
   hitSound: {fileID: 8300000, guid: d4aee29185389894b9cc0d8873904a49, type: 3}

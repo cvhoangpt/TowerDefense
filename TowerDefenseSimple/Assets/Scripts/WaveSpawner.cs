@@ -57,7 +57,7 @@ public class WaveSpawner : MonoBehaviour
 
         Wave wave = waves[waveIndex];
 
-        EnemiesAlive = wave.count1;
+        EnemiesAlive = wave.count1 + wave.count2 + wave.count3;
 
         //Debug.Log("Wave Incoming...");
         for (int i = 0; i < wave.count1; i++)
@@ -71,7 +71,6 @@ public class WaveSpawner : MonoBehaviour
             }
         }
 
-        EnemiesAlive += wave.count2;
         for (int i = 0; i < wave.count2; i++)
         {
             SpawnEnemy(wave.enemy2);
@@ -83,7 +82,6 @@ public class WaveSpawner : MonoBehaviour
             }
         }
 
-        EnemiesAlive += wave.count3;
         for (int i = 0; i < wave.count3; i++)
         {
             SpawnEnemy(wave.enemy3);
