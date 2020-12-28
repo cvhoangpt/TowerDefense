@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour
 
     public int worth = 50;
 
+    private Waypoints targetWaypoint;
+
     [Header("Death Effect")]
     public GameObject deathEffect;
     public AudioClip deathSound;
@@ -21,11 +23,13 @@ public class Enemy : MonoBehaviour
 
     private bool isDead = false;
 
+
     void Start()
     {
         speed = startSpeed;
         health = startHealth;
     }
+
     public void TakeDamage(float amount)
     {
         health -= amount;
@@ -56,5 +60,5 @@ public class Enemy : MonoBehaviour
         //Debug.Log("Error hapen!!");
         AudioSource.PlayClipAtPoint(deathSound, 0.8f * Camera.main.transform.position + 0.2f * transform.position);
         Destroy(gameObject);
-    }
+    }    
 }
