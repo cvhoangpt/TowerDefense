@@ -18,10 +18,13 @@ public class GameManager : MonoBehaviour
         if (GameIsOver)
             return;
 
+#if UNITY_EDITOR
+        // Debug shortcut: end the game instantly (Editor only, not in builds)
         if (Input.GetKeyDown("e"))
         {
             EndGame();
         }
+#endif
 
         if (PlayerStats.Lives <= 0)
         {
