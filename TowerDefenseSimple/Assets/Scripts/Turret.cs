@@ -39,8 +39,38 @@ public class Turret : MonoBehaviour
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        if (useLaser)
+        {
+            SetupLaserAudio();
+        }
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
+    }
+
+    // One looping AudioSource per laser turret instead of spawning a new
+    // one-shot audio object every frame with PlayClipAtPoint.
+    void SetupLaserAudio()
+    {
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.spatialBlend = 0f; // 2D: same loudness wherever the camera is
+        }
+        audioSource.clip = laserSound;
+        audioSource.loop = true;
+        audioSource.playOnAwake = false;
+        audioSource.volume = volume;
+    }
+
+    void StopLaser()
+    {
+        lineRenderer.enabled = false;
+        impactEffect.Stop();
+        impactLight.enabled = false;
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+        }
     }
 
     void UpdateTarget()
@@ -72,17 +102,24 @@ public class Turret : MonoBehaviour
     }
     void Update()
     {
+        // Looping laser sound must not keep playing while the game is paused / over
+        if (audioSource != null)
+        {
+            if (Time.timeScale == 0f)
+            {
+                audioSource.Pause();
+            }
+            else
+            {
+                audioSource.UnPause();
+            }
+        }
+
         if (target == null)
         {
-            if (useLaser)
+            if (useLaser && lineRenderer.enabled)
             {
-                if (lineRenderer.enabled)
-                {
-                    lineRenderer.enabled = false;
-                    impactEffect.Stop();
-                    impactLight.enabled = false;
-                }
-                
+                StopLaser();
             }
 
             return;
@@ -125,7 +162,10 @@ public class Turret : MonoBehaviour
             lineRenderer.enabled = true;
             impactEffect.Play();
             impactLight.enabled = true;
-
+            if (audioSource != null && laserSound != null)
+            {
+                audioSource.Play();
+            }
         }
         lineRenderer.SetPosition(0, firePoint.position);
         lineRenderer.SetPosition(1, target.position);
@@ -135,11 +175,6 @@ public class Turret : MonoBehaviour
         impactEffect.transform.position = target.position + dir.normalized;
 
         impactEffect.transform.rotation = Quaternion.LookRotation(dir);
-
-        // audioSource.clip = laserSound;
-        AudioSource.PlayClipAtPoint(laserSound, 0.5f * Camera.main.transform.position + 0.5f * transform.position, volume);
-        //Destroy(laserSound);
-
     }
 
     void Shoot()
