@@ -363,7 +363,7 @@ StyleCopReport.xml
 *_p.c
 *_h.h
 *.ilk
-*.meta
+# *.meta  (disabled: Unity needs .meta files committed)
 *.obj
 *.iobj
 *.pch
@@ -479,7 +479,7 @@ PublishScripts/
 # NuGet Symbol Packages
 *.snupkg
 # The packages folder can be ignored because of Package Restore
-**/[Pp]ackages/*
+# **/[Pp]ackages/*  (disabled: Unity needs Packages/manifest.json)
 # except build/, which is used as an MSBuild target.
 !**/[Pp]ackages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
@@ -645,3 +645,8 @@ MigrationBackup/
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
+
+# Unity: always keep asset .meta files and the Packages manifest
+!*.meta
+!TowerDefenseSimple/Packages/
+!TowerDefenseSimple/Packages/manifest.json
